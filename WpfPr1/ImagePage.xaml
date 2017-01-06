@@ -1,0 +1,42 @@
+﻿<Page x:Class="WpfPr1.ImagePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	Title="ImagePage" MouseMove="myevent">
+    
+    <Grid x:Name="pageGrid">
+        <Grid.Background>
+            <ImageBrush ImageSource="blue_back.jpg" />
+        </Grid.Background>
+        <StackPanel x:Name="mainPanel">
+            <StackPanel x:Name="horPanel" Orientation="Horizontal">
+                <Canvas x:Name="viewCanvas" Margin="150, 40"  Background="Blue" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Button x:Name="imgButton" Canvas.Top="0" Canvas.Left="0" MouseMove="MouseTrack" MouseLeave="MouseTrackEnd" Click="CropFlagSetter">
+                        <Button.Content>
+                            <Image x:Name="mainImg" Stretch="Fill" />
+                        </Button.Content>
+                    </Button>
+                    <Canvas x:Name="imgCanvas" Canvas.Top="0" Canvas.Left="0"/>
+                </Canvas>
+                <StackPanel Orientation="Vertical" Margin="40, 120">
+                    <TextBlock Text="Cursor Cordinates :" TextAlignment="Center" FontSize="15" Margin="0, 5" Foreground="White"/>
+                    <TextBlock x:Name="statusLabel" TextAlignment="Center" FontSize="15" Margin="0, 5" Foreground="White"/>
+                    <Canvas x:Name="cropCanvas" Height="250" Width="250" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 20">
+                        <Button x:Name="cropImgButton" >
+                            <Image x:Name="croppedImg" Stretch="Fill"/>
+                        </Button>
+                    </Canvas>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0, 8">
+                        <Button x:Name="RectB" Content="Crop Rectangle" Click="selectOpt" Margin="10, 5" Height="30" Width="120" Background="{x:Null}" Foreground="White" BorderBrush="White" BorderThickness="2" FontSize="14"/>
+                        <Button x:Name="OvalB" Content="Crop Oval" Click="selectOpt" Margin="10, 5" Height="30" Width="120" Background="{x:Null}" Foreground="White" BorderBrush="White" BorderThickness="2" FontSize="14"/>
+                        <Button x:Name="ArbitB" Content="Crop any Shape" Click="selectOpt" Margin="10, 5" Height="30" Width="120" Background="{x:Null}" Foreground="White" BorderBrush="White" BorderThickness="2" FontSize="14"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+            <Button x:Name="backButton" Content="Back" HorizontalAlignment="Center" Click="BackClick" Height="30" Width="120" Background="{x:Null}" Foreground="White" BorderBrush="White" BorderThickness="2" FontSize="14" />
+        </StackPanel>
+    </Grid>
+</Page>
