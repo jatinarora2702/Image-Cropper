@@ -26,8 +26,8 @@ namespace WpfPr1
     public partial class MainPage : Page, ILeapEventDeligate
     {
         public static List<string> picsList;
-        Controller ctrl1 = new Controller();    // Will throw exception if Leap Motion Sensor is not connected
         double prevTime, currTime, timeDif;
+        Controller ctrl1;
         LeapListener l;
         Button currentB;
 
@@ -66,13 +66,22 @@ namespace WpfPr1
         public MainPage()
         {
             InitializeComponent();
-            l = new LeapListener(this);
-            ctrl1.AddListener(l);
-            ctrl1.SetPolicyFlags(Leap.Controller.PolicyFlag.POLICY_BACKGROUND_FRAMES);
-            ctrl1.EnableGesture(Gesture.GestureType.TYPE_SCREEN_TAP);
-            ctrl1.EnableGesture(Gesture.GestureType.TYPESCREENTAP);
-            ctrl1.EnableGesture(Gesture.GestureType.TYPE_KEY_TAP);
-            ctrl1.EnableGesture(Gesture.GestureType.TYPEKEYTAP);
+            try
+            {
+                ctrl1 = new Controller();    // Will throw exception if Leap Motion Sensor is not connected
+                l = new LeapListener(this);
+                ctrl1.AddListener(l);
+                ctrl1.SetPolicyFlags(Leap.Controller.PolicyFlag.POLICY_BACKGROUND_FRAMES);
+                ctrl1.EnableGesture(Gesture.GestureType.TYPE_SCREEN_TAP);
+                ctrl1.EnableGesture(Gesture.GestureType.TYPESCREENTAP);
+                ctrl1.EnableGesture(Gesture.GestureType.TYPE_KEY_TAP);
+                ctrl1.EnableGesture(Gesture.GestureType.TYPEKEYTAP);
+            }
+            catch
+            {
+                // Controller not connected
+            } 
+
             populatePicsList();
             Button b = null;
             BitmapImage bi = null;
@@ -178,9 +187,11 @@ namespace WpfPr1
             {
                 MessageBox.Show("ERROR");
             }
-            else
-                //MessageBox.Show("DONE");
-            ctrl1.RemoveListener(l);
+            if (ctrl1 != null)
+            {
+                MessageBox.Show("This is the problem!!!!");
+                ctrl1.RemoveListener(l);
+            }
             Debug.WriteLine("navigating66");
             //ctrl1.Dispose();
             Debug.WriteLine("navigating");

@@ -13,7 +13,7 @@
         </Grid.Background>
         <StackPanel x:Name="mainPanel" Margin="10, 10, 10, 10">
             <TextBlock x:Name="titleBlock" Text="Image Navigator" TextAlignment="Center" FontSize="40" Foreground="White"/>
-            <TextBlock x:Name="statusBlock" Text="0" TextAlignment="Center" FontSize="10" Foreground="White"/>
+            <TextBlock x:Name="statusBlock" Text="0" TextAlignment="Center" FontSize="10" Foreground="White" Visibility="Hidden"/>
             <TextBlock x:Name="subTitleBlock" Text="Click on a picture to expand" Margin="0, 20" TextAlignment="Center" FontSize="15" Foreground="White"/>
             <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
                 <WrapPanel x:Name="imgPanel" Orientation="Vertical" Margin="0, 20" Height="500"/>    

@@ -17,3 +17,22 @@ C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\WpfPr1 - Copy\WpfP
 C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\WpfPr1 - Copy\WpfPr1\bin\Debug\LeapCSharp.NET4.0.dll
 C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\WpfPr1 - Copy\WpfPr1\obj\Debug\WpfPr1.exe
 C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\WpfPr1 - Copy\WpfPr1\obj\Debug\WpfPr1.pdb
+C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\Image-Cropper\WpfPr1\bin\Debug\WpfPr1.exe.config
+C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\Image-Cropper\WpfPr1\obj\Debug\WpfPr1.exe
+C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\Image-Cropper\WpfPr1\obj\Debug\WpfPr1.pdb
+C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\Image-Cropper\WpfPr1\bin\Debug\WpfPr1.exe
+C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\Image-Cropper\WpfPr1\bin\Debug\WpfPr1.pdb
+C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\Image-Cropper\WpfPr1\bin\Debug\LeapCSharp.NET4.0.dll
+C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\Image-Cropper\WpfPr1\obj\Debug\WpfPr1.csprojResolveAssemblyReference.cache
+C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\Image-Cropper\WpfPr1\obj\Debug\ImagePage.baml
+C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\Image-Cropper\WpfPr1\obj\Debug\MainPage.baml
+C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\Image-Cropper\WpfPr1\obj\Debug\MainWindow.baml
+C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\Image-Cropper\WpfPr1\obj\Debug\ImagePage.g.cs
+C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\Image-Cropper\WpfPr1\obj\Debug\MainPage.g.cs
+C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\Image-Cropper\WpfPr1\obj\Debug\MainWindow.g.cs
+C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\Image-Cropper\WpfPr1\obj\Debug\App.g.cs
+C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\Image-Cropper\WpfPr1\obj\Debug\WpfPr1_Content.g.cs
+C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\Image-Cropper\WpfPr1\obj\Debug\WpfPr1_MarkupCompile.cache
+C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\Image-Cropper\WpfPr1\obj\Debug\WpfPr1.g.resources
+C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\Image-Cropper\WpfPr1\obj\Debug\WpfPr1.Properties.Resources.resources
+C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\Image-Cropper\WpfPr1\obj\Debug\WpfPr1.csproj.GenerateResource.Cache

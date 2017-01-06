@@ -82,8 +82,11 @@ namespace WpfPr1
             //ctrl.SetPolicyFlags(Leap.Controller.PolicyFlag.POLICY_BACKGROUND_FRAMES);
             //l = new Listener();
             //ctrl.AddListener(l);
-            l = new LeapListener(this);
-            ctrl.AddListener(l);
+            if (ctrl != null)
+            {
+                l = new LeapListener(this);
+                ctrl.AddListener(l);
+            }
             mainImg.Source = src;
             Debug.WriteLine("Line3");
             BitmapImage bmp = src as BitmapImage;

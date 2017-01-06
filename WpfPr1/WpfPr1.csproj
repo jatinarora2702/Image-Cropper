@@ -164,8 +164,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /yr "C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\WpfPr1 - Copy\WpfPr1\lib\Leap.dll" "$(TargetDir)"
-xcopy /yr "C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\WpfPr1 - Copy\WpfPr1\lib\LeapCSharp.dll" "$(TargetDir)"</PostBuildEvent>
+    <PostBuildEvent>xcopy /yr "C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\Image-Cropper\WpfPr1\lib\Leap.dll" "$(TargetDir)"
+xcopy /yr "C:\Users\JatinArora\Documents\Academics\Projects\ImageCropper\Image-Cropper\WpfPr1\lib\LeapCSharp.dll" "$(TargetDir)"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
